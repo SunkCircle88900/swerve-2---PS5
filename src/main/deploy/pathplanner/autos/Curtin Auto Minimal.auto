@@ -1,0 +1,50 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.7239216600449117,
+      "y": 4.462952869318647
+    },
+    "rotation": 118.23744553816728
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "race",
+          "data": {
+            "commands": [
+              {
+                "type": "path",
+                "data": {
+                  "pathName": "Copy of back then front"
+                }
+              },
+              {
+                "type": "named",
+                "data": {
+                  "name": "Smart Intake"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "FixedShoot"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "Curtin to Mid"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "2024",
+  "choreoAuto": false
+}

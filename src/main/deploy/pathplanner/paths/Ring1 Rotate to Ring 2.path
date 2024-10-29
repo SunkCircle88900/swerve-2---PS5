@@ -1,0 +1,74 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 7.619458280472706,
+        "y": 1.3698330491267514
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 7.2026549004468485,
+        "y": 1.1650875291140483
+      },
+      "isLocked": false,
+      "linkedName": "Ring1 Rotate End"
+    },
+    {
+      "anchor": {
+        "x": 7.356214040456375,
+        "y": 1.8524474891566924
+      },
+      "prevControl": {
+        "x": 7.722234309620981,
+        "y": 1.2358441126409332
+      },
+      "nextControl": {
+        "x": 6.4056098403974,
+        "y": 3.4538499492560435
+      },
+      "isLocked": false,
+      "linkedName": null
+    },
+    {
+      "anchor": {
+        "x": 8.365316960518978,
+        "y": 2.473996389195254
+      },
+      "prevControl": {
+        "x": 8.094760380502192,
+        "y": 2.371623629188903
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "Ring 2"
+    }
+  ],
+  "rotationTargets": [
+    {
+      "waypointRelativePos": 1,
+      "rotationDegrees": -150.86570780277384,
+      "rotateFast": false
+    }
+  ],
+  "constraintZones": [],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 151.63095370672133,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "New Folder",
+  "previewStartingState": {
+    "rotation": 0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}

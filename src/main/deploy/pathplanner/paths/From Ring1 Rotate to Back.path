@@ -1,0 +1,52 @@
+{
+  "version": 1.0,
+  "waypoints": [
+    {
+      "anchor": {
+        "x": 7.619458280472706,
+        "y": 1.3698330491267514
+      },
+      "prevControl": null,
+      "nextControl": {
+        "x": 8.619458280472706,
+        "y": 1.3698330491267514
+      },
+      "isLocked": false,
+      "linkedName": "Ring1 Rotate End"
+    },
+    {
+      "anchor": {
+        "x": 8.277568880513535,
+        "y": 0.777533509090006
+      },
+      "prevControl": {
+        "x": 7.277568880513535,
+        "y": 0.7775335090900057
+      },
+      "nextControl": null,
+      "isLocked": false,
+      "linkedName": "Mid"
+    }
+  ],
+  "rotationTargets": [],
+  "constraintZones": [],
+  "eventMarkers": [],
+  "globalConstraints": {
+    "maxVelocity": 3.0,
+    "maxAcceleration": 3.0,
+    "maxAngularVelocity": 540.0,
+    "maxAngularAcceleration": 720.0
+  },
+  "goalEndState": {
+    "velocity": 0,
+    "rotation": 0,
+    "rotateFast": false
+  },
+  "reversed": false,
+  "folder": "New Folder",
+  "previewStartingState": {
+    "rotation": 0,
+    "velocity": 0
+  },
+  "useDefaultConstraints": true
+}
