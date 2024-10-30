@@ -12,7 +12,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 import java.util.function.BooleanSupplier;
 
-
+//these are the device id and digital input from the Roborio and the KrackenX60 which is the motor for the intake.
 public class Intake extends SubsystemBase {
     private final TalonFX intakeMotor = new TalonFX(51);
     public final DigitalInput beamBreak = new DigitalInput(0);
@@ -30,10 +30,12 @@ public class Intake extends SubsystemBase {
    *
    * @return a command
    */
+
+   //this is to show if the intake has a game object loaded or not.
+
   private void setVoltage(double voltage) {
     SmartDashboard.putBoolean("beam break", beamBreak.get());
     SmartDashboard.putBoolean("beam broken", beamBroken.getAsBoolean());
-
     intakeMotor.setVoltage(voltage);
   }
 
@@ -80,12 +82,13 @@ public class Intake extends SubsystemBase {
 
 
 
-
+//Smart intake is for the beambreak for when the game object is inserted in to the intake the intake will stop running.-Nic
   public Command smartIntake(){
 
     return runIntake().until(beamBroken)
             .andThen(runEjectintake().until(beamNotBroken))
             .andThen(stopIntake());
+
             
   }
 

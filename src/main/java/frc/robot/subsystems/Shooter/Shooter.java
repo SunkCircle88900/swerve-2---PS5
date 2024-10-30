@@ -52,7 +52,8 @@ public class Shooter extends SubsystemBase {
     );
     
   }
-  
+  //spin up shooter will run the shooter for 0.6 seconds which is the amount of time
+  // until the intake runs for the shooter to shoot the game object.
   public Command spinupShooter(){
     return runShooter()
     .withTimeout(0.6);
