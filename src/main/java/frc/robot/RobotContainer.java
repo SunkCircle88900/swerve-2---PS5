@@ -79,10 +79,9 @@ public class RobotContainer {
 
     // reset the field-centric heading on D pad up press
     joystick.povUp().onTrue(drivetrain.runOnce(() -> drivetrain.seedFieldRelative()));
-
     joystick.pov(0).whileTrue(drivetrain.applyRequest(() -> forwardStraight.withVelocityX(0.5).withVelocityY(0)));
     joystick.pov(180).whileTrue(drivetrain.applyRequest(() -> forwardStraight.withVelocityX(-0.5).withVelocityY(0)));
-
+// this is the controllers keybinds for when you want to change the button use for robot control.
     drivetrain.registerTelemetry(logger::telemeterize);
 
     joystick.L1().whileTrue(m_intake.smartIntake());
@@ -109,7 +108,7 @@ public class RobotContainer {
   //   joystick.start().and(joystick.y()).whileTrue(drivetrain.sysIdQuasistatic(Direction.kForward));
   //   joystick.start().and(joystick.x()).whileTrue(drivetrain.sysIdQuasistatic(Direction.kReverse));
   // }
-
+// these are the commands for the pathplanner and for the commands for the controller.
   public RobotContainer() {
     NamedCommands.registerCommand("Shoot", shoot);
     NamedCommands.registerCommand("eject shooter", m_shooter.ejectShooter());
