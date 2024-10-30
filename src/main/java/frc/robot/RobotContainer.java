@@ -122,7 +122,7 @@ public class RobotContainer {
     NamedCommands.registerCommand("FixedShoot", shootPath);
     configureBindings();
   }
-
+//here is for path planner which is used for the Autonomus during the round which is 15 seconds.
   public Command getAutonomousCommand() {
     runAuto = drivetrain.getAutoPath("Curtin Auto Minimal");
     /* First put the drivetrain into auto run mode, then run the auto */
