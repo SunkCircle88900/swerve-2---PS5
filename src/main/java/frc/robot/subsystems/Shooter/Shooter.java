@@ -9,7 +9,7 @@ import edu.wpi.first.wpilibj2.command.Commands;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import com.ctre.phoenix6.hardware.TalonFX;
 
-
+//this is the device id.
 public class Shooter extends SubsystemBase {
     private final TalonFX ShooterMotor = new TalonFX(52);
 
@@ -59,7 +59,7 @@ public class Shooter extends SubsystemBase {
     .withTimeout(0.6);
   }
 
-
+//ejects the note from the shooter.
  public Command ejectShooter(){
   return Commands.run(
     () -> ShooterMotor.setVoltage(-3),
